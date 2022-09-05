@@ -1,0 +1,462 @@
+body header{
+    font-family: Franklin Gothic Medium, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 61px;
+    background: #344051;
+}
+.logo{
+    color: #fff;
+    font-size: 23.33px;
+    line-height: 60px;
+    padding-left: 388px;
+    float: left;
+}
+.menu{
+    float: left;
+    padding-left: 432px;
+}
+
+.menu li{
+    float: left;
+    color: #fff;
+    font-size: 16.67px;
+    margin-right: 38px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+.main{
+    width: 100%;
+    height: calc(100% - 60px);
+    background:url(../img/Guy.png)985px 57px/ contain no-repeat , url(../img/Fon.jpg)center/cover no-repeat; 
+}
+.title__container{
+    float: left;
+    margin: 432px 0px 0px 404px;
+    color: #2c384a;
+    text-align: center;
+}
+.title__container h1{
+    font-size: 79.17px;
+    font-weight: bold;
+    
+}
+.title__container h4{
+    margin-top: 40px;
+    font-size: 20,83px;
+    color: #79818d;
+}
+.title__container input{
+    height: 42px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 8px;  
+    color: #6d7682;
+    font-size: 18.82px;
+    padding: 0px 14px;
+    margin: 55px 14px 0px 14px; 
+}
+.about_me__container{
+    font-family: Franklin Gothic Medium, sans-serif;
+    text-align: left;
+    width: 742px;
+    margin: 0 auto;
+}
+.about_me__container h2{
+    text-align: center;
+    font-size: 33.33px;
+    color: #263244;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin: 108px auto 15px auto;
+}
+.orange_line{
+    margin-top: 31px;
+    margin-bottom: 60px;
+}
+.about_me__container img{
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about_me form{
+    text-align: center;
+    margin: 36px auto;
+}
+.about_me input{
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 8px;  
+    color: #6d7682;
+    padding: 10px;
+    background: url("../img/but_download.png")left/12px 13px no-repeat local;
+    background-position: 8px 13px;
+    font-size: 15px;  
+}
+.skills{
+    float: left;
+    font-family: Franklin Gothic Medium, sans-serif;
+    background: url("../img/fon_for_skills.png")center/cover no-repeat;
+    width: 100%;
+    height: 523px;
+    margin-bottom: 105px; 
+}
+.skills h2{
+    font-size: 33.33px;
+    text-align: center;
+    margin-top: 107px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #263244;
+    white-space: nowrap;
+}
+.orange_line{
+    text-align: center;
+    margin: 31px auto; 
+} 
+.skills_container{
+    width: 875px;
+    margin: 100px auto;
+}
+.skills_item{
+    text-align: center;
+    float: left;
+    width: 215px;
+    height: 155px;
+}
+.skills_item h3{
+    color: #cf7600;
+    font-family: Bahnschrift Medium, sans-serif;
+    margin-top: 35px;
+    margin-bottom: 2px;
+}
+.skills_item p{
+    font-family: Calibri Medium, sans-serif;
+}
+.cases h2{
+    text-align: center;
+    margin-top: 100px;
+    font-family: Franklin Gothic Medium, sans-serif;
+    font-size: 33.33px;
+    text-transform: uppercase;
+    color: #384354;
+}
+.orange_line{
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+.cases p{
+    text-align: center;
+}
+.Cases{
+    display: block;
+    margin: 20px auto;  
+}
+.under_cases__container{
+    width: 1200px;
+    height: 120px;
+    margin: 150px auto;
+}
+.under_cases_1{
+    float: left;
+    width: 200px;
+    height: 110px;
+    margin-right: 100px; 
+}
+.under_cases_2{
+    float: left;
+    width: 870px;
+    height: 110px;
+}
+.under_cases_1 h3{
+    font-family: Franklin Gothic Medium, sans-serif;
+    color: #384354;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+.under_cases_1 span{
+    font-family: Calibri Medium, sans-serif;
+    color: #384354;
+    font-size: 16.67px;
+    margin-bottom: 5px;
+}
+.under_cases_2 h3{
+    font-family: Franklin Gothic Medium, sans-serif;
+    color: #384354;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.under_cases_2 span{
+    font-family: Calibri Medium, sans-serif;
+    color: #384354;
+    font-size: 16.67px;
+    margin-bottom: 5px;
+}
+.under_cases_3{
+    float: left;
+    background: #63b5ae;
+    width: 203px;
+    height: 44px;
+    border-radius: 8px;
+    padding-top: 12px;
+    padding-left: 42px;
+}
+.under_cases_3 h3{
+    color: #ffffff;
+    font-family: Calibri Medium, sans-serif;
+    font-size: 20px;
+}
+.price h3{
+    margin-top: 190px;
+    text-align: center;
+    font-family: Franklin Gothic Medium, sans-serif;
+    font-size: 33.33px;
+}
+.selectors__containers{
+    margin: 100px auto 25px auto; 
+    width: 600px;
+    height: 350px;
+    border-bottom: 3px solid #eeeeee;
+}
+.selectors{
+    width: 600px;
+    height: 57px;
+    background: #eeeeee;
+    margin-top: 15px;
+}
+.selectors__containers h4{
+    display: block;
+    font-family: Franklin Gothic Medium, sans-serif;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+}
+.list{
+    color: #263244;
+    margin-top: 20px;
+    background: #eeeeee;
+}
+.price{
+    display: block;
+}
+.results__container{
+    display: block;
+    width: 600px;
+    height: 60px;
+    margin: 10px auto 132px auto;
+    font-family: Franklin Gothic Medium, sans-serif;
+    font-size: 20px;
+}
+.words{
+    float: left;
+    display: block;
+    width: 110px;
+    height: 50px
+}
+.numbers{
+    float: left;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+.clear{
+    clear: left;
+}
+.statistics{
+    float: left;
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/fon_2.png)center/cover no-repeat; 
+    font-family: Franklin Gothic Medium, sans-serif;
+    color: #444e5d;
+}
+.statistics h3{
+    text-align: center;
+    margin-top: 180px;
+    white-space: nowrap;
+    font-size: 33.33px;
+}
+.statistics img{
+    display: block;
+    margin: 60px auto ;
+}
+.statistics__container{
+    display: block;
+    width: 1100px;
+    height: 170px;
+    margin: 0px auto 0px auto;
+}
+.awards{
+    float: left;
+    text-align: center;
+    width: 170px;
+    height: 160px;
+    margin: 0px 52px 0px 52px;
+    
+}
+.awards h2{
+    text-align: center;
+    font-size: 33.33px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.awards span{
+    text-align: center;
+    font-size: 18px;
+    white-space: nowrap;
+}
+.reviews{
+    float: left;
+    display: block;
+    width: 100%;
+    font-family: Franklin Gothic Medium, sans-serif;
+    color: #444e5d; 
+    text-align: center;
+}
+.reviews h2{
+    text-align: center;
+    font-size: 33.33px;
+    color: #263244;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin: 108px auto 15px auto;
+}
+.orange_line{
+    margin-top: 31px;
+    margin-bottom: 60px;
+}
+.reviews_img{
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.reviews p{
+    font-size: 16px;
+    font-family: Calibri, sans-serif;
+    margin-bottom: 20px;
+}
+.reviews span{
+    font-size: 16px;
+    font-family: Calibri, sans-serif;
+    margin-top: 20px;
+}
+.radio{
+    margin-top: 50px; 
+    margin-bottom: 100px;
+}
+.main_footer{
+    float: left;
+    margin-top: 0px;
+    background: url(../img/fon_3.png)center/cover no-repeat; 
+    width: 100%;
+    height: 1200px;
+    font-family: Franklin Gothic Medium, sans-serif;
+}
+.footer_1__container{
+    display: block;
+    width: 600px;
+    height: 120px;
+    margin: 120px auto 0px auto;
+    text-align: center;
+    
+}
+.footer_1__container h2{
+    text-align: center;
+    font-size: 33.33px;
+    color: #ffffff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin: 108px auto 15px auto;
+}
+.footer_1__container img{
+    margin-top: 31px;
+    margin-bottom: 60px;
+}
+.footer_1__container p{
+    display: block;
+    font-size: 16px;
+    font-family: Calibri, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+.middle_footer__container{
+    width: 750px;
+    height: 85px;
+    margin: 200px auto 100px auto;
+}
+.footers_block{
+    float: left;
+    text-align: center;
+    width: 165px;
+    height: 65px;
+    margin: 0px 45px 0px 40px;
+    font-size: 18px;
+    color: #ffffff;
+}
+.footers_block img{
+    margin-bottom: 16px;
+}
+.main_footer h3{
+    text-align: center;
+    font-size: 33.33px;
+    color: #ffffff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin: 108px auto 15px auto;
+}
+.low_footer_1{
+    width: 750px;
+    height: 34px;
+    margin: 50px auto 15px auto;
+}
+.low_footer_1 input{
+    width: 333px;
+    height: 34px;
+    margin: 25px 18px;
+}
+.low_footer_2{
+    width: 750px;
+    height: 95px;
+    margin: 15px auto 15px auto;
+}
+.low_footer_2 textarea{
+    width: 750px;
+    height: 95px;
+    margin: 25px 18px;
+}
+.but_send{
+    height: 42px;
+    text-align: center;
+    border: 2px solid #ffffff;
+    background: none;
+    border-radius: 4px;  
+    color: #ffffff;
+    font-size: 18.82px;
+    padding: 0px 14px;
+    display: block;
+    margin: 55px auto 0px auto;
+}
+.map{
+    display: block;
+    width: 1920px;
+    height: 100%;
+    float: left;
+}
+.low_level{
+    margin: 0px auto;
+    display: block;
+    width: 100%;
+    height: 61px;
+    background: #344051;
+}
