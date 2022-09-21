@@ -12,6 +12,24 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!-- загручик (начало) -->
+  <div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
+<!-- скрипт для плавного отключения загрузчика после прогрузки страницы -->
+<script>
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+</script>
+<!-- загручик (конец) -->
    <header>
        <nav>
            <div class="logo">Андрей Браун</div>
