@@ -5,6 +5,8 @@ nav{
     width: 100%;
     height: 61px;
     background: #344051;
+    position: fixed;
+    z-index: 2;
 }
 .logo{
     color: #fff;
@@ -12,12 +14,14 @@ nav{
     line-height: 60px;
     padding-left: 388px;
     float: left;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s ease;
 }
 .menu{
     float: left;
     padding-left: 432px;
 }
-
 .menu li{
     float: left;
     color: #fff;
@@ -25,10 +29,18 @@ nav{
     margin-right: 38px;
     line-height: 60px;
     text-transform: uppercase;
+    -webkit-animation: shift_menu 2s ease forwards;
+    -o-animation: shift_menu 2s ease forwards;
+    animation: shift_menu 2s ease forwards;
+    opacity: 0;
+}
+main{
+    width: 100%;
+    height: 100%;
 }
 .main{
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background:url(../img/Guy.png)985px 57px/ contain no-repeat , url(../img/Fon.jpg)center/cover no-repeat; 
 }
 .title__container{
@@ -36,6 +48,13 @@ nav{
     margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;     
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;
 }
 .title__container h1{
     font-size: 79.17px;
@@ -83,6 +102,9 @@ nav{
     margin-left: auto;
     margin-right: auto;
 }
+.about_me_1{
+    margin: 50px auto 0px auto;
+}
 .about_me form{
     text-align: center;
     margin: 36px auto;
@@ -96,6 +118,7 @@ nav{
     background: url("../img/but_download.png")left/12px 13px no-repeat local;
     background-position: 8px 13px;
     font-size: 15px;  
+    cursor: pointer;
 }
 .skills{
     float: left;
@@ -121,12 +144,17 @@ nav{
 .skills_container{
     width: 875px;
     margin: 100px auto;
-}
+} 
 .skills_item{
     text-align: center;
     float: left;
     width: 215px;
     height: 155px;
+}
+img.rot {
+    animation: 5s linear 0s normal none infinite running rot;
+    -webkit-animation: 5s linear 0s normal none infinite running rot;
+    width: 50px;
 }
 .skills_item h3{
     color: #cf7600;
@@ -260,7 +288,7 @@ nav{
     height: 50px
 }
 .numbers{
-    float: left;
+    float: right;
     display: block;
     width: 50px;
     height: 50px;
@@ -273,10 +301,9 @@ nav{
 .statistics{
     float: left;
     width: 100%;
-    height: calc(100% - 60px);
-    background: url(../img/fon_2.png)center/cover no-repeat; 
-    font-family: Franklin Gothic Medium, sans-serif;
-    color: #444e5d;
+    height: 100%;
+    background: url(../img/fon_2.png)center/cover no-repeat fixed;
+    font-family: Franklin Gothic Medium, sans-serif;  
 }
 .statistics h3{
     text-align: center;
@@ -431,7 +458,7 @@ nav{
     margin: 15px auto 15px auto;
 }
 .low_footer_2 textarea{
-    width: 750px;
+    width: 705px;
     height: 95px;
     margin: 25px 18px;
 }
@@ -449,9 +476,7 @@ nav{
 }
 .map{
     display: block;
-    width: 1920px;
-    height: 100%;
-    float: left;
+    width: 100%;
 }
 .low_level{
     margin: 0px auto;
@@ -459,4 +484,158 @@ nav{
     width: 100%;
     height: 61px;
     background: #344051;
+}
+.low_level span{
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+}
+/*Анимации для объектов*/ 
+.menu li a{
+    transition: all 0.3s;
+    color: white;
+    display: inline-block;
+}
+.menu li a:visited{
+    color: white;
+}
+.menu li a:hover{
+    color: #d17700;
+    transform: scale(1.1);
+}
+.title__container input{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.title__container input:hover{
+    background-color: #344051;
+    color: white;
+}
+.title__container input:active{
+    transform: scale(1.1);
+}
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes shift_menu{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2.0s;
+}
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 404px;
+    }
+}
+.self {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.change-img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  perspective: 200px;
+}
+.change-img:hover .front-side-img {
+  transform: rotateY(180deg);
+}
+.change-img:hover .back-side-img {
+  transform: rotateY(360deg);
+}
+.front-side-img, .back-side-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  back-side-imgface-visibility: hidden;
+ }
+.front-side-img img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+}
+.back-side-img img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+  transform: scaleX(-1);
+}
+.back-side-img {
+  transform: rotateY(180deg);
+}
+.about_me input:active {
+    transform: scale(1.1);
+    background-color: #d17700;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.under_cases_3:hover {
+    transform: scale(1.2);
+}
+.under_cases_3 h3:active {
+    color: #dc8756;
+}
+.under_cases_3:active {
+    transform: scale(1.1);
+}
+.selectors:hover {
+    cursor: pointer;
+}
+.but_send:hover {
+    cursor: pointer;
+}
+.but_send:active {
+    transform: scale(1.1);
+    background-color: #d17700;
 }
