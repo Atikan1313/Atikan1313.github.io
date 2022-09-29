@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Это моя первая страница...">
+    <meta name="author" content="Nikita">
+    <meta name="keywords" content="сайт-визитка">
+    <meta name="robots" content="noindex, follow">
+    <meta property="og: title" content="Это моя первая страница...">
+    <title>Андрей Браун - веб разработчик</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initiak-scale=1.0">
+</head>
+<body>
+<!-- загручик (начало) -->
+<div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
+<!-- скрипт для плавного отключения загрузчика после прогрузки страницы -->
+<script>
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+</script>
+<!-- загручик (конец) -->
+
+<header>
+     <nav>
+          <div class="container">
+              <div class="row">
+                  <div class="col-xxl-2 col-xl-3 col-lg-4 col-7"><div class="logo">Андрей Браун</div></div>
+                  <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 col-lg-8 offset-xxl-4 offset-xl-2 d-none d-lg-block">
+                      <div class="menu">
+                           <ul>
+                               <li><a href="#">Обо мне</a></li>
+                               <li><a href="#">Услуги</a></li>
+                               <li><a href="#">Кейсы</a></li>
+                               <li><a href="#">Прайс</a></li>
+                               <li><a href="#">Отзывы</a></li>
+                               <li><a href="#">Контакты</a></li>
+                           </ul>
+                      </div>
+                  </div>
+                 <div class="col-5 d-block d-lg-none flex-column justify-content-center align-items-end">
+                     <div class="dropdown">
+                         <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Навигация</a>
+                         <ul class="dropdown-menu">
+                             <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                             <li><a class="dropdown-item" href="#">Услуги</a></li>
+                             <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                             <li><a class="dropdown-item" href="#">Прайс</a></li>
+                             <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                             <li><a class="dropdown-item" href="#">Контакты</a></li>
+                         </ul>
+                     </div>
+                 </div>
+              </div>
+          </div>
+       </nav>
+</header>
+
+<main>
+  <section class="main">
+      <div class="container h-100">
+          <div class="row align-items-center h-100">
+            <div class="col-lg-6 mt-5 pt-5">
+             <div class="title__container mt-5">
+                 <h1>Привет <br> Я Андрей Браун</h1>
+                 <h4>Фулл стек веб - разработчик и Android - разработчик</h4>
+                 <input type="button" value="Обо мне">
+                 <input type="button" value="Мои работы">
+             </div> 
+            </div>
+           <div class="col-lg-6"></div>
+          </div>
+       </div>
+    </section>
+</main>
+   
+<section class="about_me">
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+        </div>
+    </div>
+</section>
+
+<section class="skills"></section>
+   
+<section class="cases"></section>
+
+<section class="price"></section>
+<div class="clear"></div>
+   
+<section class="statistics"></section>
+
+<section class="reviews"></section>
+   
+<footer></footer>
+   
+<div class="map"></div>
+   
+<div class="low_level"></div>
+    
+</body>
+</html>

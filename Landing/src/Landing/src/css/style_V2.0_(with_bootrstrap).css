@@ -1,0 +1,314 @@
+/* header (начало) */
+header{
+    font-family: Franklin Gothic Medium, sans-serif;
+}
+nav{
+    width: 100vw;
+    height: 61px;
+    background: #344051;
+    position: fixed;
+    z-index: 10;
+}
+.logo{
+    color: #fff;
+    font-size: 30px;
+    line-height: 60px;
+    float: left;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s ease;
+}
+.menu{
+    float: left;
+}
+.menu li{
+    float: left;
+    color: #fff;
+    font-size: 16.67px;
+    margin-right: 38px;
+    line-height: 60px;
+    text-transform: uppercase;
+    -webkit-animation: shift_menu 2s ease forwards;
+    -o-animation: shift_menu 2s ease forwards;
+    animation: shift_menu 2s ease forwards;
+    opacity: 0;
+}
+.main{
+    width: 100%;
+    height: 100vw;
+    background: url(../img/Guy.png) 90% 100%/auto 85% no-repeat, url(../img/Fon.jpg)center/cover no-repeat; 
+}
+.title__container{
+    float: left;
+    color: #2c384a;
+    text-align: center;
+    opacity: 0;
+    -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;     
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;*/
+}
+.title__container h1{
+    font-family: Franklin Gothic Medium, sans-serif;
+    font-size: 79.17px;
+    font-weight: bold;
+    
+}
+.title__container h4{
+    margin-top: 40px;
+    font-size: 20,83px;
+    color: #79818d;
+}
+.title__container input{
+    height: 42px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 8px;  
+    color: #6d7682;
+    font-size: 18.82px;
+    padding: 0px 14px;
+    margin: 55px 14px 0px 14px; 
+}
+/* header (конец) */
+/* анимации для объектов (начало) */ 
+.menu li a{
+    transition: all 0.3s;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+}
+.menu li a:visited{
+    color: white;
+}
+.menu li a:hover{
+    color: #d17700;
+    transform: scale(1.1);
+}
+.title__container input{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.title__container input:hover{
+    background-color: #344051;
+    color: white;
+}
+.title__container input:active{
+    transform: scale(1.1);
+}
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes shift_menu{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2.0s;
+}
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+.self {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.change-img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  perspective: 200px;
+}
+.change-img:hover .front-side-img {
+  transform: rotateY(180deg);
+}
+.change-img:hover .back-side-img {
+  transform: rotateY(360deg);
+}
+.front-side-img, .back-side-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  back-side-imgface-visibility: hidden;
+ }
+.front-side-img img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+}
+.back-side-img img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+  transform: scaleX(-1);
+}
+.back-side-img {
+  transform: rotateY(180deg);
+}
+.about_me input:active {
+    transform: scale(1.1);
+    background-color: #d17700;
+}
+.about_me input:hover {
+    transform: scale(1.1);
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.under_cases_3:hover {
+    transform: scale(1.2);
+}
+.under_cases_3 h3:active {
+    color: #dc8756;
+}
+.under_cases_3:active {
+    transform: scale(1.1);
+}
+.selectors:hover {
+    cursor: pointer;
+}
+.but_send:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.but_send:active {
+    transform: scale(1.1);
+    background-color: #d17700;
+}
+@media (max-width: 991px){
+    .title__container,.title__container h4,.title__container input{
+        color: white;
+        position: relative;
+        z-index: 3;
+    }
+    .title__container input{
+        border: 2px solid #fff;
+    }
+    .main{
+        position: relative;
+    }
+    .main::after{
+        content: "";
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+}
+/* анимации для объектов (конец) */
+/* загручик (начало) */
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #dfdfe3;
+  z-index: 1001;
+}
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #db8756;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes preloader-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+.loaded .preloader {
+  display: none;
+}
+/* загручик (конец) */
+/* Bootstrap (начало) */
+
+/* Bootstrap (конец) */
