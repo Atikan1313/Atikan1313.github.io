@@ -1,18 +1,17 @@
-body header{
+header{
     font-family: Franklin Gothic Medium, sans-serif;
 }
 nav{
-    width: 100%;
+    width: 100vw;
     height: 61px;
     background: #344051;
     position: fixed;
-    z-index: 2;
+    z-index: 10;
 }
 .logo{
     color: #fff;
-    font-size: 23.33px;
+    font-size: 30px;
     line-height: 60px;
-    padding-left: 388px;
     float: left;
     -webkit-animation: comming 2s ease;
     -o-animation: comming 2s ease;
@@ -20,7 +19,6 @@ nav{
 }
 .menu{
     float: left;
-    padding-left: 432px;
 }
 .menu li{
     float: left;
@@ -34,29 +32,26 @@ nav{
     animation: shift_menu 2s ease forwards;
     opacity: 0;
 }
-main{
-    width: 100%;
-    height: 100%;
-}
 .main{
     width: 100%;
-    height: 100%;
-    background:url(../img/Guy.png)985px 57px/ contain no-repeat , url(../img/Fon.jpg)center/cover no-repeat; 
+    height: 100vh;
+    background:url(../img/Guy.png) 90% 100%/auto 85% no-repeat, url(../img/Fon.jpg)center/cover no-repeat; 
 }
 .title__container{
     float: left;
-    margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    
     opacity: 0;
     -webkit-animation: titlemove 1s ease forwards;
     -o-animation: titlemove 1s ease forwards;
     animation: titlemove 1s ease forwards;     
     -webkit-animation-delay: 2.4s;
     -o-animation-delay: 2.4s;
-    animation-delay: 2.4s;
+    animation-delay: 2.4s;*/
 }
 .title__container h1{
+    font-family: Franklin Gothic Medium, sans-serif;
     font-size: 79.17px;
     font-weight: bold;
     
@@ -475,8 +470,8 @@ img.rot {
     margin: 55px auto 0px auto;
 }
 .map{
-    display: block;
-    width: 100%;
+    display: flex;
+    max-width: 100%;
 }
 .low_level{
     margin: 0px auto;
@@ -490,11 +485,15 @@ img.rot {
     text-align: center;
     padding-top: 20px;
 }
+.dropdown white-btn:visited{
+    color: white;
+}
 /*Анимации для объектов*/ 
 .menu li a{
     transition: all 0.3s;
     color: white;
     display: inline-block;
+    text-decoration: none;
 }
 .menu li a:visited{
     color: white;
@@ -554,7 +553,7 @@ img.rot {
     }
     to{
         opacity: 1;
-        margin-left: 404px;
+        margin-left: 0px;
     }
 }
 .self {
@@ -642,6 +641,29 @@ img.rot {
 .but_send:active {
     transform: scale(1.1);
     background-color: #d17700;
+}
+@media (max-width: 991px){
+    .title__container,.title__container h4,.title__container input{
+        color: white;
+        position: relative;
+        z-index: 3;
+    }
+    .title__container input{
+        border: 2px solid #fff;
+    }
+    .main{
+        position: relative;
+    }
+    .main::after{
+        content: "";
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
 }
 /* загручик (начало) */
 .preloader {
