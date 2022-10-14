@@ -488,7 +488,7 @@ img.rot {
 .dropdown white-btn:visited{
     color: white;
 }
-/*Анимации для объектов*/ 
+/*Анимации для объектов (начало)*/ 
 .menu li a{
     transition: all 0.3s;
     color: white;
@@ -665,6 +665,7 @@ img.rot {
         z-index: 1;
     }
 }
+/*Анимации для объектов (конец)*/ 
 /* загручик (начало) */
 .preloader {
   position: fixed;
