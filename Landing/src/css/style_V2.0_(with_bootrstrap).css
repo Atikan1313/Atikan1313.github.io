@@ -79,6 +79,13 @@ nav{
 }
 /*main (конец)*/
 /*about_me (начало)*/
+.about_me{
+	height: 100%;
+	padding-top: 20px;
+	padding-bottom: 140px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
 .about_me__container{
     font-family: Franklin Gothic Medium, sans-serif;
     text-align: left;
@@ -124,11 +131,12 @@ nav{
 /*about_me (конец)*/
 /*skills (начало)*/
 .skills{
-    font-family: Franklin Gothic Medium, sans-serif;
+	font-family: Franklin Gothic Medium, sans-serif;
     background: url("../img/fon_for_skills.png")center/cover no-repeat;
     max-width: 100%;
-    height: 100%;
-    margin: 100px 0 105px 0;
+    height: 950px;
+    /*margin: 100px 0 105px 0;*/
+	padding: 100px 0 105px 0;
 }
 .skills_container h2{
     font-size: 33.33px;
@@ -168,12 +176,15 @@ img.rot {
 }
 /*skills (конец)*/
 /*cases (начало)*/
-.cases p{
-    text-align: center;
-}
 .cases{
     max-width: 100%;
     max-height: 100%;
+}
+.cases_container{
+	padding: 20px 0 95px 0;
+};
+.textOfCases p{
+    text-align: center;
 }
 .X_X {
     display: flex;
@@ -183,8 +194,9 @@ img.rot {
 }
 img.Cases{
     display: block;
-    margin: 20px 0px;  
-    max-width: 100%;
+    margin: 0px 0px;  
+    max-width: 90%;
+	height: 90%;
 }
 .cases_container h2{
     font-family: Franklin Gothic Medium, sans-serif;
@@ -194,17 +206,25 @@ img.Cases{
     color: #263244;
     white-space: nowrap;
 }
+.orange_line3{
+	display: block;
+	text-align: center;
+	margin: 5px 0 10px 0;
+}
+.uc1{
+	margin-left: 1px;
+}
 .under_cases_1{
     float: left;
     max-width: 200px;
     height: 110px; 
-    margin: 40px 0 20px 0;
+    margin: 10px 0 10px 0;
 }
 .under_cases_2{
     float: left;
-    max-width: 870px;
+    max-width: 74%;
     height: 110px;
-    margin: 40px 0 20px 0;
+    margin: 10px 0 10px 0;
 }
 .under_cases_1 h3{
     font-family: Franklin Gothic Medium, sans-serif;
@@ -231,7 +251,7 @@ img.Cases{
     margin-bottom: 20px;
 }
 .under_cases_3{
-    margin-top: 50px;
+    margin-top: 20px;
     background: #63b5ae;
     width: 210px;
     height: 44px;
@@ -250,8 +270,8 @@ img.Cases{
 /*cases (конец)*/
 /*price (начало)*/
 .price_container{
-    margin-top: 160px;
-    max-width: 1200px;
+	margin: 50px auto 70px auto;
+    max-width: 900px;
     height: 750px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
@@ -262,7 +282,7 @@ img.Cases{
     font-size: 33.33px;
 }
 .selectors__containers{
-    margin: 30px auto 25px auto; 
+    margin: 0px auto 25px auto; 
     border-bottom: 5px solid #eeeeee;
     padding-bottom: 40px;
 }
@@ -319,8 +339,8 @@ img.Cases{
     clear: left;
 }
 /*price (конец)*/
-/*statistics (начало)*/
-.statistics{
+/*statistic (начало)*/
+.statistic{
     margin-top: 30px;
     float: left;
     width: 100%;
@@ -328,7 +348,7 @@ img.Cases{
     background: url(../img/fon_2.png)center/cover no-repeat fixed;
     font-family: Franklin Gothic Medium, sans-serif;  
 }
-.statistics h3{
+.statistic h3{
     margin-top: 60px;
     white-space: nowrap;
     font-size: 33.33px;
@@ -341,22 +361,40 @@ img.Cases{
     text-align: center;
     height: 160px;
 }
-.awards h2{
+/* бегущие цифры (начало)*/
+.number{
     text-align: center;
     font-size: 33.33px;
     font-weight: bold;
     margin-bottom: 20px;
+	opacity: 0;
 }
+.viz {
+  opacity: 1;
+  transition: 1s;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+/* бегущие цифры (конец)*/
 .awards span{
     text-align: center;
     font-size: 18px;
 }
-/*statistics (конец)*/
+/*statistic (конец)*/
 /*reviews (начало)*/
 .reviews{
     float: left;
     display: block;
     width: 100%;
+	height: 950px;
     font-family: Franklin Gothic Medium, sans-serif;
     color: #444e5d; 
     text-align: center;
@@ -387,10 +425,51 @@ img.Cases{
     font-family: Calibri, sans-serif;
     margin-top: 20px;
 }
-.radio{
-    margin-top: 30px; 
-    margin-bottom: 100px;
+/* Радио-кнопки (начало) */
+.radio-button{
+	margin: 30px auto 100px auto;
 }
+.real-radio {
+	width: 0;
+	height: 0;
+	position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.custom-radio {
+	position: relative;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: #cfd2d7;
+	border: 2px solid #cfd2d7;
+	border-radius: 50%;
+	vertical-align: text-top;
+	margin-right: 5px;
+}
+.custom-radio::before {
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: #db8756;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.2s ease-in;
+}
+
+.real-radio:checked + .custom-radio::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Подсветка для радиокнопке в фокусе */
+.real-radio:focus + .custom-radio {
+	box-shadow: 0px 0px 0px 1px #db8756, 0px 0px 10px #db8756;
+}
+/* Радио-кнопки (конец) */
 /*reviews (конец)*/
 /*contacts (начало)*/
 .contacts__container{
@@ -514,6 +593,15 @@ img.Cases{
 }
 /*footer (конец)*/
 /*Анимации для объектов (начало)*/ 
+/*Анимации для карусели в отзывах (начало)*/
+.element-animation{
+    opacity: 0;
+}
+.element-animation.show-animation{
+    opacity: 1;
+    transition: opacity 1s;
+}
+/*Анимации для карусели в отзывах (конец)*/
 .menu li a{
     transition: all 0.3s;
     color: white;
@@ -522,6 +610,9 @@ img.Cases{
 }
 .menu li a:visited{
     color: white;
+}
+.menu li a.active{
+	color: #d17700;
 }
 .menu li a:hover{
     color: #d17700;
@@ -694,9 +785,19 @@ img.Cases{
         z-index: 1;
     }
 }
+@media (max-width: 767px){
+    .under_cases_3{
+        margin-top: 90px;
+    }
+}
 @media (max-width: 452px){
     .under_cases_3{
         margin-top: 100px;
+    }
+}
+@media (max-width: 444px){
+    .under_cases_3{
+        margin-top: 120px;
     }
 }
 @media (max-width: 391px){
@@ -739,12 +840,18 @@ img.Cases{
     .statistics__container img{
         margin-bottom: 10px;
     }
+	.skills{
+		padding: 0px 0 0px 0;
+	}
+	.skills_container h2{
+		margin: 19px 0 6px 0;
+	}
 }
 @media (max-width: 575px){
-    .statistics{
+    .statistic{
         height: 900px;
     }
-    .statistics h3{
+    .statistic h3{
         font-size: 30px;
     }
 }
